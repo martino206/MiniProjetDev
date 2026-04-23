@@ -1,0 +1,30 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+
+# Environment
+.env
+.env.local
+.env.production
+
+/server/.env
+/client/.env
+
+# Build
+/client/build
+/client/.cache
+
+# Uploads (generated)
+/server/uploads/avatars/*
+/server/uploads/covers/*
+/server/uploads/content/*
+!/server/uploads/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
