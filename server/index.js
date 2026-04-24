@@ -7,7 +7,7 @@ const app = express();
 
 // Middlewares globaux
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:3000',
+  origin: process.env.CLIENT_URL,
   credentials: true
 }));
 app.use(express.json({ limit: '10mb' }));
@@ -34,5 +34,5 @@ console.log("JWT =", process.env.JWT_SECRET);
 console.log("DB =", process.env.DB_PASSWORD);
 
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`🚀 Serveur lancé sur http://localhost:${PORT}`));
