@@ -6,7 +6,7 @@ import { useAuth } from '../context/AuthContext.jsx'
 import ArticleCard from '../components/article/ArticleCard.jsx'
 import { PageLoader } from '../components/common/Spinner.jsx'
 
-const SRV = 'http://localhost:5000'
+const SRV = 'https://miniprojetdev.onrender.com'
 const src = s => (!s ? null : s.startsWith('http') ? s : `${SRV}${s}`)
 
 export default function ProfilePage() {
