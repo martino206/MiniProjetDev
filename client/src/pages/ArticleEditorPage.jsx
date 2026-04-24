@@ -4,7 +4,7 @@ import { ImagePlus, Save, Eye, ArrowLeft, X, AlertCircle, CheckCircle } from 'lu
 import { articlesAPI, categoriesAPI } from '../services/api.jsx'
 import { PageLoader } from '../components/common/Spinner.jsx'
 
-const SRV = 'http://localhost:5000'
+const SRV = 'https://miniprojetdev.onrender.com'
 
 export default function ArticleEditorPage() {
   const { id }   = useParams()
