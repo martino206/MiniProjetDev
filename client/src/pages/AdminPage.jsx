@@ -11,7 +11,7 @@ const TABS = [
   { id: 'categories', label: 'Catégories',       icon: Shield },
 ]
 
-const SRV = 'http://localhost:5000'
+const SRV = 'https://miniprojetdev.onrender.com'
 
 function Stat({ label, value, icon: Icon, color }) {
   const bg = { amber: 'bg-amber-50 dark:bg-amber-950/30 text-amber-600', green: 'bg-green-50 dark:bg-green-950/30 text-green-600', blue: 'bg-blue-50 dark:bg-blue-950/30 text-blue-600', red: 'bg-red-50 dark:bg-red-950/30 text-red-600' }
