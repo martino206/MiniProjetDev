@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({ 
-  baseURL: 'http://localhost:5000/api', 
+  baseURL: 'https://miniprojetdev.onrender.com', 
   timeout: 15000 })
 
 api.interceptors.request.use((config) => {
