@@ -7,7 +7,7 @@ const app = express();
 
 // Middlewares globaux
 app.use(cors({
-  origin: process.env.CLIENT_URL,
+  origin: "https://mini-projet-dev.vercel.app",
   credentials: true
 }));
 app.use(express.json({ limit: '10mb' }));
