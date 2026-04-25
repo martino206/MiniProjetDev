@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Heart, MessageSquare, Bookmark, Clock, Eye } from 'lucide-react'
 
-const SRV = 'http://localhost:5000'
+const SRV = 'https://miniprojetdev.onrender.com'
 const src = (s) => (!s ? null : s.startsWith('http') ? s : `${SRV}${s}`)
 
 export default function ArticleCard({ article, onLike, onBookmark }) {
