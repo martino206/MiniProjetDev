@@ -4,6 +4,7 @@ const { validationResult } = require('express-validator')
 const cloudinary = require('../config/cloudinary')
 const { uploadToCloudinary } = require('../middlewares/upload')
 
+
 const makeSlug = (title) =>
   slugify(title, { lower: true, strict: true, locale: 'fr' }) + '-' + Date.now()
 
