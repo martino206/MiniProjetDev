@@ -8,7 +8,7 @@ import { useAuth } from '../../context/AuthContext.jsx'
 import { useTheme } from '../../context/ThemeContext.jsx'
 import { notificationsAPI } from '../../services/api.jsx'
 
-const API = 'http://localhost:5000'
+const API = 'https://miniprojetdev.onrender.com'
 
 export default function Navbar() {
   const { user, logout, isAdmin } = useAuth()
