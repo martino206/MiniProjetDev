@@ -1,9 +1,9 @@
 const router = require('express').Router();
 const { body } = require('express-validator');
-const ctrl = require('../controllers/articleController');
-const commentCtrl = require('../controllers/commentController');
-const { authMiddleware, optionalAuth } = require('../middlewares/auth');
-const upload = require('../middlewares/upload');
+const ctrl = require('../controllers/articleController.js');
+const commentCtrl = require('../controllers/commentController.js');
+const { authMiddleware, optionalAuth } = require('../middlewares/auth.js');
+const {upload} = require('../middlewares/upload.js');
 
 // Public with optional auth
 router.get('/', optionalAuth, ctrl.getArticles);

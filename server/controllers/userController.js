@@ -1,8 +1,8 @@
 const bcrypt   = require('bcrypt')
 const { validationResult } = require('express-validator')
-const db       = require('../config/db')
-const cloudinary = require('../config/cloudinary')
-const { uploadToCloudinary } = require('../middlewares/upload')
+const db       = require('../config/db.js')
+const cloudinary = require('../config/Claudinary.js')
+const { uploadToCloudinary } = require('../middlewares/upload.js')
 
 exports.getProfile = async (req, res, next) => {
   try {

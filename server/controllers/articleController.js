@@ -1,9 +1,8 @@
-const db       = require('../config/db')
+const db       = require('../config/db.js')
 const slugify  = require('slugify')
 const { validationResult } = require('express-validator')
-const cloudinary = require('../config/cloudinary')
-const { uploadToCloudinary } = require('../middlewares/upload')
-
+const cloudinary = require('../config/Claudinary.js')
+const { uploadToCloudinary } = require('../middlewares/upload.js')
 
 const makeSlug = (title) =>
   slugify(title, { lower: true, strict: true, locale: 'fr' }) + '-' + Date.now()

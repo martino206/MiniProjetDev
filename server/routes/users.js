@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const { body } = require('express-validator');
-const ctrl = require('../controllers/userController');
-const { authMiddleware, adminMiddleware } = require('../middlewares/auth');
-const upload = require('../middlewares/upload');
+const ctrl = require('../controllers/userController.js');
+const { authMiddleware, adminMiddleware } = require('../middlewares/auth.js');
+const {upload} = require('../middlewares/upload.js');
 
 // Public
 router.get('/profile/:username', ctrl.getProfile);

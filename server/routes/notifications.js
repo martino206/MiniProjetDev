@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const ctrl = require('../controllers/notificationController');
-const { authMiddleware } = require('../middlewares/auth');
+const ctrl = require('../controllers/notificationController.js');
+const { authMiddleware } = require('../middlewares/auth.js');
 
 router.get('/', authMiddleware, ctrl.getNotifications);
 router.put('/read-all', authMiddleware, ctrl.markAllRead);

@@ -1,5 +1,5 @@
 const multer  = require('multer')
-const cloudinary = require('../config/cloudinary')
+const cloudinary = require('../config/Claudinary.js')
 const { Readable } = require('stream')
 
 // On garde les fichiers en mémoire (pas sur disque)

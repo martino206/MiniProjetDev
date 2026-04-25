@@ -1,7 +1,7 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { validationResult } = require('express-validator');
-const db = require('../config/db');
+const db = require('../config/db.js');
 
 
 const generateToken = (user) => {

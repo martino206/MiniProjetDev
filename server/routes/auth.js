@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { body } = require('express-validator');
-const { register, login, getMe } = require('../controllers/authController');
-const { authMiddleware } = require('../middlewares/auth');
+const { register, login, getMe } = require('../controllers/authController.js');
+const { authMiddleware } = require('../middlewares/auth.js');
 
 router.post('/register', [
   body('username').trim().isLength({ min: 3, max: 50 }).withMessage('Username: 3-50 caractères'),
