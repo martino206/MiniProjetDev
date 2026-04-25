@@ -4,7 +4,7 @@ import { MessageSquare, Send, Trash2, CornerDownRight } from 'lucide-react'
 import { useAuth } from '../../context/AuthContext.jsx'
 import { articlesAPI } from '../../services/api.jsx'
 
-const SRV = 'http://localhost:5000'
+const SRV = 'https://miniprojetdev.onrender.com'
 const src = (s) => (!s ? null : s.startsWith('http') ? s : `${SRV}${s}`)
 
 function Av({ u, size = 8 }) {
