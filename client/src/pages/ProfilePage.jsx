@@ -7,7 +7,15 @@ import ArticleCard from '../components/article/ArticleCard.jsx'
 import { PageLoader } from '../components/common/Spinner.jsx'
 
 const SRV = 'https://miniprojetdev.onrender.com'
-const src = s => (!s ? null : s.startsWith('http') ? s : `${SRV}${s}`)
+const SRV = 'https://miniprojetdev.onrender.com';
+
+const src = (s) => {
+  if (!s) return null;
+
+  if (s.startsWith('http')) return s;
+
+  return `${SRV}${s.startsWith('/') ? '' : '/'}${s}`;
+};
 
 export default function ProfilePage() {
   const { username }       = useParams()
