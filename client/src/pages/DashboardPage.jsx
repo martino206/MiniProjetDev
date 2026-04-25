@@ -6,7 +6,13 @@ import { usersAPI, articlesAPI } from '../services/api.jsx'
 import { PageLoader } from '../components/common/Spinner.jsx'
 
 const SRV = 'https://miniprojetdev.onrender.com'
-const src = s => (!s ? null : s.startsWith('http') ? s : `${SRV}${s}`)
+const src = (s) => {
+  if (!s) return null;
+
+  if (s.startsWith('http')) return s;
+
+  return `${SRV}${s.startsWith('/') ? '' : '/'}${s}`;
+};
 
 const TABS = [
   { id: 'profile',   label: 'Profil',    icon: User },
