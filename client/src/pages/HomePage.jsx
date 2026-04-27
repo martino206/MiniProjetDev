@@ -244,7 +244,7 @@ export default function HomePage() {
 
 /* ── Featured large card ── */
 function FeaturedCard({ article, onLike, onBookmark }) {
-  const SRV   = 'http://localhost:5000'
+  const SRV   = 'https://miniprojetdev.onrender.com'
   const cover  = article.cover_image ? (article.cover_image.startsWith('http') ? article.cover_image : `${SRV}${article.cover_image}`) : null
   const avatar = article.avatar      ? (article.avatar.startsWith('http')      ? article.avatar      : `${SRV}${article.avatar}`)      : null
   const cats   = Array.isArray(article.categories)      ? article.categories      : []

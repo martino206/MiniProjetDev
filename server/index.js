@@ -35,4 +35,4 @@ console.log("DB =", process.env.DB_PASSWORD);
 
 
 const PORT = process.env.PORT;
-app.listen(PORT, () => console.log(`🚀 Serveur lancé sur http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`🚀 Serveur lancé sur https://miniprojetdev.onrender.com:${PORT}`));
